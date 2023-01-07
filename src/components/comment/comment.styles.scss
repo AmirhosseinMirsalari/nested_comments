@@ -1,0 +1,59 @@
+.comment {
+  &__container {
+    .user__image {
+      height: 40px;
+      width: 40px;
+      margin-right: 16px;
+    }
+    display: flex;
+    margin: 20px 0px;
+
+    .reply__actions {
+      display: flex;
+    }
+  }
+
+  &__info {
+    width: 100%;
+  }
+
+  &__user {
+    display: flex;
+    align-items: baseline;
+    &__name {
+      margin-right: 5px;
+    }
+    .time {
+      font-size: 14px;
+      color: #a7a7a7;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    margin-bottom: 2px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    width: 90%;
+  }
+
+  &__reply,
+  &__delete {
+    font-size: 14px;
+    color: #a7a7a7;
+    margin-right: 10px;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__delete {
+    color: rgb(228, 78, 78);
+  }
+}
+
+.reply {
+  background-color: brown;
+}
